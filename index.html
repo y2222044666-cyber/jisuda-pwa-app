@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极速达驿站管理系统 - 手机版</title>
+    <!-- 引入 Tailwind CSS 框架 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 设置移动端主题颜色 -->
+    <meta name="theme-color" content="#4f46e5"> 
+    <style>
+        /* 使用 Inter 或系统默认的无衬线字体 */
+        body { font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- 引入 React/ReactDOM (生产环境优化版本) -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- 引入 Babel 转换器，让浏览器能识别 JSX 语法 -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- 引入 Lucide Icons 库 -->
+    <script type="module">
+        import { createRoot } from 'react-dom/client';
+        // 核心应用逻辑将通过 type="text/babel" 脚本加载
+        // 创建 React 根元素
+        const root = createRoot(document.getElementById('root'));
+    </script>
+    
+    <!-- 核心应用脚本 (会加载你的 App.jsx 代码) -->
+    <script type="text/babel" data-type="module" src="./App.jsx"></script>
+
+</body>
+</html>
